@@ -1,0 +1,20 @@
+{
+    "modules": [
+        "splashscreen",
+        "splashscreen_introduction",
+        "beranda",
+        "tentang_aplikasi",
+        "assesment",
+        "rangkuman_materi",
+        "video_pembelajaran",
+        "artikel_pembelajaran",
+        "daftar_artikel_pembelajaran",
+        "daftar_video_pembelajaran",
+        "daftar_rangkuman_pembelajaran"
+    ],
+    "module_directory_name": "module",
+    "experimental_mode": false,
+    "learning_mode": false,
+    "unfreezed": true,
+    "use_cubit": false
+}
