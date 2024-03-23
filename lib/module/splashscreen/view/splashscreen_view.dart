@@ -25,6 +25,7 @@ class SplashscreenView extends StatefulWidget {
     });
     return Scaffold(
       body: Container(
+        color: neutralWhite,
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

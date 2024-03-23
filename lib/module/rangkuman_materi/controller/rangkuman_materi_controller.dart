@@ -54,7 +54,7 @@ class RangkumanMateriController extends State<RangkumanMateriView> {
     if (DeviceDatabase.statusPermission == false) {
       requestPersmission();
     }
-    getFileFromUrl("http://www.africau.edu/images/default/sample.pdf").then(
+    getFileFromUrl("https://css4.pub/2015/icelandic/dictionary.pdf").then(
       (value) => {
         setState(() {
           urlPDFPath = value.path;
@@ -68,7 +68,9 @@ class RangkumanMateriController extends State<RangkumanMateriView> {
   }
 
   @override
-  void dispose() => super.dispose();
+  void dispose() {
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) => widget.build(context, this);
