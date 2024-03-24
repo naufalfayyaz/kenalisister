@@ -11,6 +11,7 @@ class ArtikelPembelajaranView extends StatefulWidget {
   Widget build(context, ArtikelPembelajaranController controller) {
     controller.view = this;
     return Scaffold(
+      backgroundColor: neutralWhite,
       appBar: AppBar(
         backgroundColor: primaryColor,
         iconTheme: const IconThemeData(

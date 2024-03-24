@@ -9,6 +9,8 @@ export 'package:kenali_sister/module/artikel_pembelajaran/controller/artikel_pem
 export 'package:kenali_sister/module/artikel_pembelajaran/view/artikel_pembelajaran_view.dart';
 export 'package:kenali_sister/module/assesment/controller/assesment_controller.dart';
 export 'package:kenali_sister/module/assesment/view/assesment_view.dart';
+export 'package:kenali_sister/module/assesment/widget/dialog_benar.dart';
+export 'package:kenali_sister/module/assesment/widget/dialog_salah.dart';
 export 'package:kenali_sister/module/beranda/controller/beranda_controller.dart';
 export 'package:kenali_sister/module/beranda/view/beranda_view.dart';
 export 'package:kenali_sister/module/daftar_artikel_pembelajaran/controller/daftar_artikel_pembelajaran_controller.dart';
@@ -21,6 +23,8 @@ export 'package:kenali_sister/module/daftar_video_pembelajaran/controller/daftar
 export 'package:kenali_sister/module/daftar_video_pembelajaran/view/daftar_video_pembelajaran_view.dart';
 export 'package:kenali_sister/module/form_assesment/controller/form_assesment_controller.dart';
 export 'package:kenali_sister/module/form_assesment/view/form_assesment_view.dart';
+export 'package:kenali_sister/module/hasil_assesment/controller/hasil_assesment_controller.dart';
+export 'package:kenali_sister/module/hasil_assesment/view/hasil_assesment_view.dart';
 export 'package:kenali_sister/module/rangkuman_materi/controller/rangkuman_materi_controller.dart';
 export 'package:kenali_sister/module/rangkuman_materi/view/rangkuman_materi_view.dart';
 export 'package:kenali_sister/module/splashscreen/controller/splashscreen_controller.dart';

@@ -7,6 +7,7 @@ class DaftarArtikelPembelajaranView extends StatefulWidget {
   Widget build(context, DaftarArtikelPembelajaranController controller) {
     controller.view = this;
     return Scaffold(
+      backgroundColor: neutralWhite,
       appBar: AppBar(
         backgroundColor: primaryColor,
         iconTheme: const IconThemeData(

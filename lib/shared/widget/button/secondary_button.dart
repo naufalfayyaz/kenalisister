@@ -25,7 +25,7 @@ class _SecondaryButtonState extends State<SecondaryButton> {
     Color textColor = widget.onPressed != null
         ? onHover
             ? neutralWhite
-            : yellow700
+            : red600
         : gray400;
     return Container(
       constraints: const BoxConstraints(
@@ -35,7 +35,7 @@ class _SecondaryButtonState extends State<SecondaryButton> {
       child: OutlinedButton(
         style: ButtonStyle(
           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-          backgroundColor: MaterialStateProperty.all<Color>(neutralWhite),
+          backgroundColor: MaterialStateProperty.all<Color>(red600),
           shape: MaterialStateProperty.all<OutlinedBorder>(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8),
@@ -43,10 +43,10 @@ class _SecondaryButtonState extends State<SecondaryButton> {
           ),
           side: MaterialStateProperty.all<BorderSide>(
             BorderSide(
-              color: widget.onPressed != null ? yellow700 : gray400,
+              color: widget.onPressed != null ? red600 : gray400,
             ),
           ),
-          overlayColor: MaterialStateProperty.all<Color>(yellow900),
+          overlayColor: MaterialStateProperty.all<Color>(red800),
         ),
         onFocusChange: (value) {
           setState(
@@ -72,7 +72,7 @@ class _SecondaryButtonState extends State<SecondaryButton> {
                   ? Text(
                       trimString(widget.text),
                       style: myTextTheme.titleSmall?.copyWith(
-                        color: textColor,
+                        color: neutralWhite,
                       ),
                     )
                   : Container(),

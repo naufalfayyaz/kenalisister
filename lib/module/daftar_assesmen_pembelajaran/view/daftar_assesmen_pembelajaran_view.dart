@@ -15,6 +15,12 @@ class DaftarAssesmenPembelajaranView extends StatefulWidget {
         iconTheme: const IconThemeData(
           color: neutralWhite,
         ),
+        leading: BackButton(
+          color: neutralWhite,
+          onPressed: () {
+            Get.offAll(const BerandaView());
+          },
+        ),
         title: Text(
           "Daftar Assesment",
           style: myTextTheme.titleLarge?.copyWith(color: neutralWhite),
