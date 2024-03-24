@@ -13,10 +13,14 @@ export 'package:kenali_sister/module/beranda/controller/beranda_controller.dart'
 export 'package:kenali_sister/module/beranda/view/beranda_view.dart';
 export 'package:kenali_sister/module/daftar_artikel_pembelajaran/controller/daftar_artikel_pembelajaran_controller.dart';
 export 'package:kenali_sister/module/daftar_artikel_pembelajaran/view/daftar_artikel_pembelajaran_view.dart';
+export 'package:kenali_sister/module/daftar_assesmen_pembelajaran/controller/daftar_assesmen_pembelajaran_controller.dart';
+export 'package:kenali_sister/module/daftar_assesmen_pembelajaran/view/daftar_assesmen_pembelajaran_view.dart';
 export 'package:kenali_sister/module/daftar_rangkuman_pembelajaran/controller/daftar_rangkuman_pembelajaran_controller.dart';
 export 'package:kenali_sister/module/daftar_rangkuman_pembelajaran/view/daftar_rangkuman_pembelajaran_view.dart';
 export 'package:kenali_sister/module/daftar_video_pembelajaran/controller/daftar_video_pembelajaran_controller.dart';
 export 'package:kenali_sister/module/daftar_video_pembelajaran/view/daftar_video_pembelajaran_view.dart';
+export 'package:kenali_sister/module/form_assesment/controller/form_assesment_controller.dart';
+export 'package:kenali_sister/module/form_assesment/view/form_assesment_view.dart';
 export 'package:kenali_sister/module/rangkuman_materi/controller/rangkuman_materi_controller.dart';
 export 'package:kenali_sister/module/rangkuman_materi/view/rangkuman_materi_view.dart';
 export 'package:kenali_sister/module/splashscreen/controller/splashscreen_controller.dart';
@@ -32,6 +36,7 @@ export 'package:kenali_sister/module/video_pembelajaran/controller/video_pembela
 export 'package:kenali_sister/module/video_pembelajaran/view/video_pembelajaran_view.dart';
 export 'package:kenali_sister/module/video_pembelajaran/widget/video_list.dart';
 export 'package:kenali_sister/service/main_storage.dart';
+export 'package:kenali_sister/service/request_permmision.dart';
 export 'package:kenali_sister/setup.dart';
 export 'package:kenali_sister/shared/theme/theme.dart';
 export 'package:kenali_sister/shared/theme/theme_config.dart';

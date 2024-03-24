@@ -139,7 +139,9 @@ class BerandaView extends StatefulWidget {
                         suffixSVG: "assets/illustration/chevron-kanan.svg",
                         title: "Assesmen",
                         subtitle: "Assesmen Materi Pemebalajran",
-                        navTo: () {},
+                        navTo: () {
+                          Get.to(const DaftarAssesmenPembelajaranView());
+                        },
                       ),
                       Container(
                         height: 1,

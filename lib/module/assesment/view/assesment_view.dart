@@ -1,30 +1,27 @@
-
 import 'package:flutter/material.dart';
 import 'package:kenali_sister/core.dart';
-import '../controller/assesment_controller.dart';
 
 class AssesmentView extends StatefulWidget {
-  const AssesmentView({Key? key}) : super(key: key);
+  const AssesmentView({super.key});
 
   Widget build(context, AssesmentController controller) {
-  controller.view = this;
+    controller.view = this;
     return Scaffold(
+      backgroundColor: neutralWhite,
       appBar: AppBar(
-        title: const Text("Assesment"),
-        actions: const [],
+        backgroundColor: primaryColor,
+        iconTheme: const IconThemeData(
+          color: neutralWhite,
         ),
-        body: SingleChildScrollView(
-        child: Container(
-            padding: const EdgeInsets.all(10.0),
-            child: Column(
-            children: const [],
-            ),
+        title: Text(
+          "Assesment Komputer",
+          style: myTextTheme.titleLarge?.copyWith(color: neutralWhite),
         ),
       ),
+      body: Container(padding: const EdgeInsets.all(16.0), child: SizedBox()),
     );
   }
 
   @override
   State<AssesmentView> createState() => AssesmentController();
 }
-    

@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:kenali_sister/core.dart';
+import 'package:kenali_sister/shared/theme/theme_config.dart';
 
 class PrimaryButton extends StatefulWidget {
   final Function()? onPressed;
@@ -31,14 +32,15 @@ class _PrimaryButtonState extends State<PrimaryButton> {
       child: ElevatedButton(
         style: ButtonStyle(
           backgroundColor: widget.onPressed != null
-              ? const MaterialStatePropertyAll(yellow500)
+              ? MaterialStatePropertyAll(primaryColor)
               : const MaterialStatePropertyAll(gray400),
           shape: MaterialStatePropertyAll(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8),
             ),
           ),
-          overlayColor: MaterialStateProperty.all<Color>(yellow900),
+          overlayColor:
+              MaterialStateProperty.all<Color>(primaryColor.withOpacity(0.2)),
         ),
         onPressed: widget.onPressed,
         child: Padding(
@@ -49,9 +51,8 @@ class _PrimaryButtonState extends State<PrimaryButton> {
               trimString(widget.text).isNotEmpty
                   ? Text(
                       trimString(widget.text),
-                      style: myTextTheme.titleMedium?.copyWith(
-                        color: textColor,
-                      ),
+                      style:
+                          myTextTheme.titleLarge?.copyWith(color: neutralWhite),
                     )
                   : Container(),
               const SizedBox(
