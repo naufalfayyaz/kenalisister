@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kenali_sister/core.dart';
-import 'package:kenali_sister/shared/theme/theme_config.dart';
-import 'package:kenali_sister/shared/widget/text/column_text.dart';
-import '../controller/tentang_aplikasi_controller.dart';
 
 class TentangAplikasiView extends StatefulWidget {
   const TentangAplikasiView({Key? key}) : super(key: key);

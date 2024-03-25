@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kenali_sister/core.dart';
-import 'package:kenali_sister/service/request_permmision.dart';
-import '../view/splashscreen_view.dart';
 
 class SplashscreenController extends State<SplashscreenView> {
   static late SplashscreenController instance;

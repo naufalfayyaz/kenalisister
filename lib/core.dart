@@ -4,7 +4,9 @@ If there is a conflicting class name in this file,
 it means you have to rename it to something more unique.
 */
 export 'package:kenali_sister/database/device_status.dart';
+export 'package:kenali_sister/database/nama_database.dart';
 export 'package:kenali_sister/load_svg.dart';
+export 'package:kenali_sister/model/soal_model_data.dart';
 export 'package:kenali_sister/module/artikel_pembelajaran/controller/artikel_pembelajaran_controller.dart';
 export 'package:kenali_sister/module/artikel_pembelajaran/view/artikel_pembelajaran_view.dart';
 export 'package:kenali_sister/module/assesment/controller/assesment_controller.dart';
@@ -25,6 +27,8 @@ export 'package:kenali_sister/module/form_assesment/controller/form_assesment_co
 export 'package:kenali_sister/module/form_assesment/view/form_assesment_view.dart';
 export 'package:kenali_sister/module/hasil_assesment/controller/hasil_assesment_controller.dart';
 export 'package:kenali_sister/module/hasil_assesment/view/hasil_assesment_view.dart';
+export 'package:kenali_sister/module/hasil_assesment/widget/content_benar.dart';
+export 'package:kenali_sister/module/hasil_assesment/widget/content_salah.dart';
 export 'package:kenali_sister/module/rangkuman_materi/controller/rangkuman_materi_controller.dart';
 export 'package:kenali_sister/module/rangkuman_materi/view/rangkuman_materi_view.dart';
 export 'package:kenali_sister/module/splashscreen/controller/splashscreen_controller.dart';
@@ -39,6 +43,7 @@ export 'package:kenali_sister/module/tentang_aplikasi/view/tentang_aplikasi_view
 export 'package:kenali_sister/module/video_pembelajaran/controller/video_pembelajaran_controller.dart';
 export 'package:kenali_sister/module/video_pembelajaran/view/video_pembelajaran_view.dart';
 export 'package:kenali_sister/module/video_pembelajaran/widget/video_list.dart';
+export 'package:kenali_sister/service/database_services.dart';
 export 'package:kenali_sister/service/main_storage.dart';
 export 'package:kenali_sister/service/request_permmision.dart';
 export 'package:kenali_sister/setup.dart';

@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:kenali_sister/core.dart';
-import 'package:kenali_sister/shared/theme/theme_config.dart';
 
 class PrimaryButton extends StatefulWidget {
   final Function()? onPressed;

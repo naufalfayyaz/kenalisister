@@ -1,7 +1,5 @@
 import 'package:kenali_sister/core.dart';
 import 'package:flutter/material.dart';
-import 'package:kenali_sister/shared/theme/theme_config.dart';
-import 'package:kenali_sister/shared/widget/button/primary_button.dart';
 
 Future showInfoDialog(String message) async {
   await showDialog<void>(
@@ -19,66 +17,66 @@ Future showInfoDialog(String message) async {
             constraints: const BoxConstraints(
               maxWidth: 450,
             ),
-            child:
-                  SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const SizedBox(
-                      height: 16.0,
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 16.0,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 24.0,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 24.0,
-                      ),
-                      child: Text(
-                        'Info',
-                        style: myTextTheme.headlineLarge?.copyWith(
-                          color: yellow700,
-                        ),
+                    child: Text(
+                      'Info',
+                      style: myTextTheme.headlineLarge?.copyWith(
+                        color: yellow700,
                       ),
                     ),
-                    const SizedBox(
-                      height: 32.0,
+                  ),
+                  const SizedBox(
+                    height: 32.0,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 24.0,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 24.0,
-                      ),
-                      child: Text(
-                        message,
-                        style: myTextTheme.bodyLarge?.copyWith(
-                          color: gray900,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 32,
-                    ),
-                    Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: const BoxDecoration(
-                          color: gray50,
-                          borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(
-                              8,
-                            ),
-                            bottomRight: Radius.circular(
-                              8,
-                            ),
-                          )),
-                      child: PrimaryButton(
-                        onPressed: () {
-                          Get.back();
-                        },
-                        text: "OK",
+                    child: Text(
+                      message,
+                      style: myTextTheme.bodyLarge?.copyWith(
+                        color: gray900,
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                  const SizedBox(
+                    height: 32,
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: const BoxDecoration(
+                        color: gray50,
+                        borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(
+                            8,
+                          ),
+                          bottomRight: Radius.circular(
+                            8,
+                          ),
+                        )),
+                    child: PrimaryButton(
+                      onPressed: () {
+                        Get.back();
+                      },
+                      text: "OK",
+                    ),
+                  ),
+                ],
               ),
             ),
-          ),);
+          ),
+        ),
+      );
     },
   );
 }

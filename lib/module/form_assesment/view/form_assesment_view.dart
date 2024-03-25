@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:kenali_sister/core.dart';
 
 class FormAssesmentView extends StatefulWidget {
-  const FormAssesmentView({Key? key}) : super(key: key);
+  final bool isAssesmenKomputer;
+  const FormAssesmentView({super.key, required this.isAssesmenKomputer});
 
   Widget build(context, FormAssesmentController controller) {
     controller.view = this;
@@ -61,7 +62,11 @@ class FormAssesmentView extends StatefulWidget {
             PrimaryButton(
               text: "Simpan",
               onPressed: () {
-                Get.to(const AssesmentView());
+                Get.to(
+                  AssesmentView(
+                    isAssesmenKomputer: isAssesmenKomputer,
+                  ),
+                );
               },
             ),
           ],

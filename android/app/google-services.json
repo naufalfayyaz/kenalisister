@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "738435633374",
+    "project_id": "kenalisister-bf2f3",
+    "storage_bucket": "kenalisister-bf2f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738435633374:android:8047f3ff1d7fd6f826724f",
+        "android_client_info": {
+          "package_name": "com.example.kenali_sister"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD2dG3iM_J_RLxb4kyWyn5B39pQPHKOgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

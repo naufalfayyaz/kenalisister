@@ -53,7 +53,9 @@ class DaftarAssesmenPembelajaranView extends StatefulWidget {
                 ),
                 isThreeLine: true,
                 onTap: () {
-                  Get.to(const FormAssesmentView());
+                  Get.to(const FormAssesmentView(
+                    isAssesmenKomputer: true,
+                  ));
                 },
               ),
             ),
@@ -83,7 +85,9 @@ class DaftarAssesmenPembelajaranView extends StatefulWidget {
                 ),
                 isThreeLine: true,
                 onTap: () {
-                  Get.to(const FormAssesmentView());
+                  Get.to(const FormAssesmentView(
+                    isAssesmenKomputer: false,
+                  ));
                 },
               ),
             ),

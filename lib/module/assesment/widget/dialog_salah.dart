@@ -65,7 +65,7 @@ Future showDialogSalah() async {
                     child: SecondaryButton(
                       onPressed: () {
                         // Get.back();
-                        Get.offAll(HasilAssesmentView());
+                        Get.offAll(const HasilAssesmentView());
                       },
                       text: "Lanjutkan",
                     ),
